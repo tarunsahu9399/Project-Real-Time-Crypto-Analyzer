@@ -1,0 +1,35 @@
+{
+  "name": "crypto-average-calculator",
+  "version": "1.0.0",
+  "description": "Crypto Average Calculator ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshita-Ranawat/crypto-average-calculator.git"
+  },
+  "author": "Harshita and Tarun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshita-Ranawat/crypto-average-calculator/issues"
+  },
+  "homepage": "https://github.com/Harshita-Ranawat/crypto-average-calculator#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.0.4",
+    "node.js": "^0.0.1-security",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

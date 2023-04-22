@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --second-bg-color: #ceedf4;
+    --text-color: #05262e;
+    --main-color: #5dab96;
+}
+
+.wrapper{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1rem 1rem 2rem var(--main-color);
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1.2rem;
+}
+
+form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid var(--second-bg-color);
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 4rem;
+    background-color: var(--bg-color);
+}
+
+input:focus{
+    border: 1px solid var(--text-color);
+}
+input:hover{
+    /* border: 1px solid var(--main-color); */
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
+button{
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 10px 0;
+    border-radius: 4rem;
+    outline: none;
+    border: none;
+    width: 70%;
+    color: var(--text-color);
+    cursor: pointer;
+    background: var(--main-color);   
+    font-weight: 600;
+    transition: .5s ease;
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
+
+button a{
+    color: var(--text-color);
+    text-decoration:none;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+.terms{
+    margin-top: .2rem;
+}
+
+.terms input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label{
+    font-size: 0.7rem;
+}
+
+.terms a{
+    color: blue;
+    text-decoration:none;
+}
+.member{
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+.member a{
+    color: blue;
+    text-decoration:none;
+}
+
+.recovery{
+    text-align: center;
+    font-size: 0.7rem;
+    margin: .3rem1.4rem 0 0;
+}
+.recovery a{
+    color: blue;
+    text-decoration:none;
+}
