@@ -1,3 +1,11 @@
+:root {
+  --bg-color: #ffffff;
+  --second-bg-color: #ceedf4;
+  --text-color: #05262e;
+  --main-color: #5dab96;
+}
+
+
 html {
   background-color: #f9fbfc;
   
@@ -25,7 +33,7 @@ width: 100%;
   
   table, td {
     border: 1px solid rgb(225, 223, 223);
-    background-color: rgb(13, 26, 22);
+    background: var(--text-color);
   }
   
   th, td {
@@ -70,7 +78,7 @@ width: 100%;
     margin-bottom: 288px;
     justify-content: center;
     margin-left: 50%;
-    background-color: #e3e00f;
+    background: var(--main-color);;
     text-align: justify;
     font-size: 2.3rem;
     align-items: center;
