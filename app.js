@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const fs=require("fs");
-const port = 3000;
+
 const pug = require("pug");
 const path = require('path');
 const mongoose = require('mongoose')
@@ -120,6 +120,3 @@ app.post('/signup', async (req, res) => {
 })
   
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
