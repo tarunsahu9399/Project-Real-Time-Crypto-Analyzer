@@ -2,7 +2,7 @@
   "name": "crypto-average-calculator",
   "version": "1.0.0",
   "description": "Crypto Average Calculator ",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
