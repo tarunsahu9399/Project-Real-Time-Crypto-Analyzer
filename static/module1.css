@@ -32,8 +32,8 @@ width: 100%;
 
   
   table, td {
-    border: 1px solid rgb(225, 223, 223);
-    background: var(--text-color);
+    border: 1px solid rgb(16, 12, 12);
+    background: var(--second-bg-color);
   }
   
   th, td {
@@ -46,7 +46,7 @@ width: 100%;
   }
 
   table,th{
-    color: #f9fbfc;
+    color:var(--text-color);
   }
 
   button #add-row{
