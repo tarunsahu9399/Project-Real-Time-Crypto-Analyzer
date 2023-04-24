@@ -76,21 +76,27 @@ section#services.services
       h2 Analyse your investing price to down crypto average
       p
         | EVALUATE MONEY TO INVEST IN CRYPTO COIN , FOR DECREASING YOUR CURRENT CRYPTO AVERAGE to your
-        | PREFERRED average.
-      a.btn(href='./module1') Click Here
+        | PREFERRED average .
+        
+      //-  //const isLogin = false;
+
+      a.btn(href=islogin ? './module1' : './login') Click Here
+      //- a.btn(href='./module1') Click Here
 
     .services-box
       i.bx.bx-money-withdraw
       h3 Average From Money
       h2 Calculating in advance crypto average 
       p FOR CALCULATING THE AVERAGE YOU WILL GET FRoM INVESTING WILLING AMOUNT
-      a.btn(href='./module2') Click Here
+      a.btn(href=islogin ? './module2' : './login') Click Here
+      //- a.btn(href='./module2') Click Here
     .services-box
       i.bx.bxl-bitcoin
       h3 Average From Coin
       h2 Calculating in advance crypto average 
       p FOR CALCULATING THE AVERAGE YOU WILL GET FROM COINS You WILL BUY
-      a.btn(href='./module3') Click Here
+      a.btn(href=islogin ? './module1' : './login') Click Here
+      //- a.btn(href='./module3') Click Here
 // price section design
 section#price.price
   h2.heading

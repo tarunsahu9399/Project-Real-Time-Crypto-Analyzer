@@ -59,28 +59,38 @@ width: 100%;
   }
 
   button.button{
-    display: flex;
-    width: 156px;
-    height: 47px;
-    justify-content: center;
-    background-color: #e5e2e0;
-    text-align: justify;
-    font-size: 1.8rem;
-    align-items: center;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+   
+
 
   }
 
   button#add-row{
-    display: flex;
+    
     width: 162px;
     height: 47px;
     padding: 22px;
     margin-bottom: 288px;
     justify-content: center;
     margin-left: 50%;
-    background: var(--main-color);;
-    text-align: justify;
-    font-size: 2.3rem;
-    align-items: center;
-    border: solid black;
+    
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
   }

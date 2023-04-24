@@ -10,9 +10,10 @@ head
   form(action='/login' method='post')
     input(type='text' name='username' placeholder='Username')
     input(type='password' name='password' placeholder='Password')
-    button(type='Submit') Login
+    button.login(type='Submit') Login
   
    
   .member
     | Not a Member? 
     a(href='./signup') Register Here
+script(src='../static/home.js')

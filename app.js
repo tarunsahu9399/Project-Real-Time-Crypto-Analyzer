@@ -10,6 +10,10 @@ const bcrypt = require('bcrypt');
 const UserData = require('./models/user');
 const session = require('express-session');
 const flash = require('connect-flash');
+let islogin = require("./static/checklogin.js");
+// import { islogin } from '../static/checklogin.js';
+
+console.log(islogin);
 
 app.use(session({
   secret: 'your-secret-key',
@@ -64,7 +68,7 @@ app.use('/static', express.static('static'))
 app.get('/', (req, res) => {
 
   const params = {}
-  res.status(200).render('login.pug', params)
+  res.status(200).render('home.pug', params)
 })
 
 app.get('/signup', (req, res) => {
@@ -95,17 +99,22 @@ app.post('/login',async(req,res)=>{
   console.log(req.body)
   const user = await UserData.findOne({ username });
   console.log(user)
-  const validPassword = await bcrypt.compare(password, user.password);
-  if (validPassword) {
-      res.render('home');
+  if(user)
+  {
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (validPassword) {
+      islogin=true;
+      console.log(islogin)
+      res.locals.islogin = islogin;
+        res.render('home', {islogin});
 
-      console.log("Succesfully logged in ");
+        console.log("Succesfully logged in ");
+    }
   }
-  else {
-    
+  else { 
     console.log("wrong login");
-   
-    res.render('login');
+    //alert("wrong login");
+    res.redirect('/login');
   }
 
 })
@@ -126,4 +135,8 @@ app.post('/signup', async (req, res) => {
   res.render('home');
 })
   
+app.get('/logout',async(req,res)=>{
+  islogin = false;
+  res.render('home',{islogin});
+})
 
