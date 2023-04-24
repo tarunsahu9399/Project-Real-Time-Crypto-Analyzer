@@ -74,6 +74,9 @@ app.get('/signup', (req, res) => {
 app.get('/login', (req, res) => {
   res.render('login');
 });
+app.get('/home', (req, res) => {
+  res.render('home');
+});
 
 app.get('/module1', (req, res) => {
   res.render('module1');
