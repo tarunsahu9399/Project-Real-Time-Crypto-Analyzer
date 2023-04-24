@@ -8,19 +8,13 @@ const path = require('path');
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt');
 const UserData = require('./models/user');
-const session = require('express-session');
-const flash = require('connect-flash');
+
 let islogin = require("./static/checklogin.js");
 // import { islogin } from '../static/checklogin.js';
 
 console.log(islogin);
 
-app.use(session({
-  secret: 'your-secret-key',
-  resave: true,
-  saveUninitialized: true
-}));
-app.use(flash());
+
 
 
 if (process.env.NODE_ENV !== "production") {
