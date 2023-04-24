@@ -1,0 +1,238 @@
+doctype html
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // style sheet
+  link(rel='stylesheet' href='../static/home.css')
+  // box icon
+  link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet')
+  title Crypto Analyzer
+  script(src='https://code.jquery.com/jquery-3.6.1.min.js')
+
+// header design
+header.header
+ 
+  a.logo(href='#') Crypto Analyzer
+  i#menu-icon.bx.bx-menu
+  nav.navbar
+    a.active(href='#home') Home
+    a(href='#about') About
+    a(href='#services') Services
+    a(href='#price') Live Price
+    a(href='login.html') Login
+// home section design
+section#home.home
+  .home-content
+    h3
+      | Welcome to the Real Time Crypto Average Analyser, the ultimate tool for analyzing the performance of
+      | your favorite cryptocurrencies in
+    h1 Real-Time
+    h3
+      | You Can Analyze From 
+      span.multiple-text
+    p
+      | Whether you&apos;re a seasoned trader or a beginner, our user-friendly platform is easy to use and navigate,
+      | with a range of customizable features to meet your individual needs.
+      | With our alerts and notifications, you&apos;ll never miss an important market movement or price point again.
+    .social-media
+      a(href='#')
+        i.bx.bxl-facebook
+      a(href='#')
+        i.bx.bxl-twitter
+      a(href='#')
+        i.bx.bxl-instagram-alt
+      a(href='#')
+        i.bx.bxl-linkedin
+    a.btn(href='#services') Lets Analyze
+  .home-img
+    img(src='../static/images/pngtree-business.png' alt='')
+// about section design
+section#about.about
+  .about-img
+    img(src='../static/images/pngtree-business.png' alt='')
+  .about-content
+    h2.heading
+      | About 
+      span Us
+    // <h3>3D Designer</h3>
+    p
+      | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta blanditiis cupiditate at perferendis
+      | molestias
+      | non quisquam magnam excepturi unde iusto fugit a voluptas quo, officia natus inventore quod, accusamus
+      | vitae?
+    a.btn(href='#') Read More
+// services section design
+section#services.services
+  h2.heading
+    | Analyse 
+    span With 
+  .services-container
+    .services-box
+      i.bx.bx-trending-up
+      h3 Averaging Down
+      h2 Analyse your investing price to down crypto average
+      p
+        | EVALUATE MONEY TO INVEST IN CRYPTO COIN , FOR DECREASING YOUR CURRENT CRYPTO AVERAGE to your
+        | PREFERRED average.
+      a.btn(href='./module1') Click Here
+
+    .services-box
+      i.bx.bx-money-withdraw
+      h3 Average From Money
+      h2 Calculating in advance crypto average 
+      p FOR CALCULATING THE AVERAGE YOU WILL GET FRoM INVESTING WILLING AMOUNT
+      a.btn(href='./module2') Click Here
+    .services-box
+      i.bx.bxl-bitcoin
+      h3 Average From Coin
+      h2 Calculating in advance crypto average 
+      p FOR CALCULATING THE AVERAGE YOU WILL GET FROM COINS You WILL BUY
+      a.btn(href='./module3') Click Here
+// price section design
+section#price.price
+  h2.heading
+    | Live 
+    span Price
+  .price-container
+    .price-box
+      img(src='../static/images/bitcoin-btc-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 BitCoin
+        p
+          | Current Price: &#x20B9;
+          span#bitcoin
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/ethereum-eth-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Ethereum
+        p
+          | Current Price: &#x20B9;
+          span#ethereum
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/solana-sol-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Solana
+        p
+          | Current Price: &#x20B9;
+          span#solana
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/cosmos-atom-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Cosmos
+        p
+          | Current Price: &#x20B9;
+          span#cosmos
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/litecoin-ltc-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Lite-Coin
+        p
+          | Current Price: &#x20B9;
+          span#litecoin
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/dogecoin-doge-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Doge-Coin
+        p
+          | Current Price: &#x20B9;
+          span#dogecoin
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/fantom-ftm-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Fantom
+        p
+          | Current Price: &#x20B9;
+          span#fantom
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/harmony-one-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Harmony
+        p
+          | Current Price: &#x20B9;
+          span#harmony
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/cardano-ada-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Cardano
+        p
+          | Current Price: &#x20B9;
+          span#cardano
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/helium-hnt-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Helium
+        p
+          | Current Price: &#x20B9;
+          span#helium
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/loopring-lrc-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Loopring
+        p
+          | Current Price: &#x20B9;
+          span#loopring
+        a(href='#')
+          i.bx.bx-link-external
+    .price-box
+      img(src='../static/images/decentraland-mana-logo.png' alt='' width='400' height='200')
+      .price-layer
+        h4 Decentraland
+        p
+          | Current Price: &#x20B9;
+          span#decentraland
+        a(href='#')
+          i.bx.bx-link-external
+// contact section design
+//
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+  <form action="#">
+  <div class="input-box">
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email Address">
+  </div>
+  <div class="input-box">
+  <input type="number" placeholder="Mobile Number">
+  <input type="text" placeholder="Email Subject">
+  </div>
+  <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <input type="submit" value="Send Message" class="btn">
+  </form>
+  </section>
+// footer design
+footer.footer
+  .footer-text
+    p Copyright &copy; 2023 by Tarun | All Right Reserved
+  .footer-iconTop
+    a(href='#home')
+      i.bx.bx-up-arrow-alt
+// scroll revel
+script(src='https://unpkg.com/scrollreveal')
+// typed js
+script(src='https://cdn.jsdeliver.net/npm/typed.js@2.0.12')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js' integrity='sha512-ggJ7yQCnXifbDXFFfyNhegaNXkkPMP+0cxMDobX6pABvU4zrqD+NMXxrGoAK9iANboRjpR4ajwWHCCfJXJFpJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+script(src='../static/Api.js')
+script(src='../static/home.js')
+

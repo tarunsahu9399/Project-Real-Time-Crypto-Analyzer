@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../static/signup.css')
+  title Login
+.wrapper
+  h1 Login
+  form(action='/login' method='post')
+    input(type='text' name='username' placeholder='Username')
+    input(type='password' name='password' placeholder='Password')
+    button(type='Submit') Login
+  .recovery
+    a(href='#') Forget Password?
+   
+   
+  .member
+    | Not a Member? 
+    a(href='./signup') Register Here

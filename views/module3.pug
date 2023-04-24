@@ -1,0 +1,57 @@
+html
+  head 
+       style 
+         include ../static/module1.css
+         include ../static/dropdown.css
+  body
+    include header
+    .container 
+     h1 Calculate Average From Invested Coin
+     script(src='table3.js')
+     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+     .tablecontainer
+      table#my-table
+       thead     
+         tr
+          th Crypto coin
+          th Invested Price
+          th Current Buying Price
+          th Coins you have
+          th No. Of Coins To Buy
+          th Averaging down
+          th Money to Invest
+          th Average
+       tbody
+          tr
+          td
+            select#coin-dropdown
+              option(value='') Select a coin
+              each option in ['Bitcoin', 'Ethereum', 'Litecoin', 'Dogecoin', 'Solana', 'Cosmos', 'Ripple', 'Helium', 'Cardano', 'Loopring', 'Fantom', 'Harmony']
+                option.coin(id=option.toLowerCase() value=option)= option
+            div.coin-options(style='display:none;')
+
+          td
+            input.Invested_Price(type='text')
+          td
+            input#current-price.Current_Price(type='text')
+          td
+            input.Coins_you_have(type='text')
+          td
+            input.Coin_You_Want_To_Buy(type='text')
+          td
+            button.button(onclick='Avg_Down()') Calculate
+          td
+            p.Money_You_Want_To_Invest
+          td
+            p.Average
+
+          
+          
+
+     button#add-row Add Row
+     include footer
+     script 
+       include ../static/module3.js
+       include ../static/table3.js
+       include ../static/dropdown.js
+       include ../static/currentprice.js
