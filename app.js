@@ -10,7 +10,7 @@ const bcrypt = require('bcrypt');
 const UserData = require('./models/user');
 
 let islogin = require("./static/checklogin.js");
-// import { islogin } from '../static/checklogin.js';
+
 
 console.log(islogin);
 
@@ -117,7 +117,7 @@ app.post('/signup', async (req, res) => {
   console.log(req.body);
   const { username,email,password } = req.body;
   if (!password) {
-      return res.redirect('/home');
+      return res.redirect('/login');
   }
   const hash = await bcrypt.hash(password, 12);
   const user = new UserData({
