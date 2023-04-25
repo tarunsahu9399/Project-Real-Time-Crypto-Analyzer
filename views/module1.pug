@@ -5,6 +5,7 @@ html
          include ../static/dropdown.css
   body
     include header
+    - console.log("bcde ",locals.islogin)
     .container 
      h1 Average Down Calculator
      script(src='table1.js')

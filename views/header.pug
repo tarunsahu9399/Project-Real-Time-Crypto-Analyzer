@@ -7,8 +7,12 @@ header.header
     a(href='/home#services') Services
     a(href='/home#price') Live Price
     if locals.islogin
+      - console.log("abcd ",locals.islogin)
       a#logout(href='/logout') Logout
     else
       a#login(href='/login') Login
+  
+    
 
   link(rel='stylesheet', href='../static/home.css')
+  -locals.islogin=true;
