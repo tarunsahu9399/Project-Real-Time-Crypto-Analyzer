@@ -55,7 +55,7 @@ width: 100%;
   input{
     width:100px;
     background-color: transparent;
-    color:white;
+    color:rgb(9, 9, 9);
   }
 
   button.button{
