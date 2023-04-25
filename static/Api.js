@@ -4,7 +4,7 @@ var ltc = document.getElementById("litecoin");
 var doge = document.getElementById("dogecoin");
 var sol = document.getElementById("solana");
 var atom = document.getElementById("cosmos");
-var xrp = document.getElementById("ripple");
+var mana = document.getElementById("decentraland");
 var hnt = document.getElementById("helium");
 var ada = document.getElementById("cardano");
 var lrc = document.getElementById("loopring");
@@ -14,7 +14,7 @@ var one = document.getElementById("harmony");
 var liveprice = {
     "async": true,
     "scroosDomain": true,
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=Litecoin%2CDogeCoin%2CSolana%2CBitcoin%2CCardano%2CCosmos%2CFantom%2CHarmony%2CEthereum%2CHelium%2CLoopring%2CRipple&vs_currencies=inr",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=Litecoin%2CDogeCoin%2CSolana%2CBitcoin%2CCardano%2CCosmos%2CFantom%2CHarmony%2CEthereum%2CHelium%2CLoopring%2Cdecentraland&vs_currencies=inr",
 
 
 
@@ -30,7 +30,7 @@ $.ajax(liveprice).done(function (response) {
     doge.innerHTML = response.dogecoin.inr;
     sol.innerHTML = response.solana.inr;
     atom.innerHTML = response.cosmos.inr;
-    xrp.innerHTML = response.ripple.inr;
+    mana.innerHTML = response.decentraland.inr;
     hnt.innerHTML = response.helium.inr;
     ada.innerHTML = response.cardano.inr;
     lrc.innerHTML = response.loopring.inr;
