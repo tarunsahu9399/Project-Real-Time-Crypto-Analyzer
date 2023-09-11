@@ -6,26 +6,30 @@ function Avg_Down() {
 
     for (let i = 0; i < Invested_Price_Class.length; i++) {
         let Invested_Price = parseFloat(Invested_Price_Class[i].value);
-        console.log(Invested_Price);
+        // console.log(Invested_Price);
 
 
 
         let Current_Price = Current_Price_Class[i].value;
-        console.log(Current_Price);
+        // console.log(Current_Price);
 
-        let Coins_you_have= Coins_you_have_Class[i].value;
-        console.log(Coins_you_have);
+        let Coins_you_have= parseInt(Coins_you_have_Class[i].value);
+        // console.log(Coins_you_have);
 
-        let Money_You_Want_To_Invest = Money_You_Want_To_Invest_Class[i].value;
-        console.log(Money_You_Want_To_Invest);
+        let Money_You_Want_To_Invest = parseInt(Money_You_Want_To_Invest_Class[i].value);
+        // console.log(Money_You_Want_To_Invest);
+        
+        console.log(Invested_Price, Money_You_Want_To_Invest, Coins_you_have);
 
-
-        let Coin_You_Want_To_Buy = Money_You_Want_To_Invest / Current_Price;
+        let Coin_You_Want_To_Buy = parseInt(Money_You_Want_To_Invest / Current_Price);
+        console.log(Invested_Price, Coin_You_Want_To_Buy, Money_You_Want_To_Invest, Coins_you_have);
         let a = document.querySelectorAll(".Coin_You_Want_To_Buy");
         a[i].innerHTML = (Coin_You_Want_To_Buy).toFixed(2);
-        console.log(a[i].innerHTML);
+        // console.log(a[i].innerHTML);
+        console.log(Invested_Price, Coin_You_Want_To_Buy, Money_You_Want_To_Invest, Coins_you_have);
 
         let Average = (Invested_Price + Money_You_Want_To_Invest) / (Coins_you_have + Coin_You_Want_To_Buy);
+        console.log(Invested_Price, Coin_You_Want_To_Buy, Money_You_Want_To_Invest, Coins_you_have);
         let b = document.querySelectorAll(".Average");
         b[i].innerHTML = (Average).toFixed(2);
 

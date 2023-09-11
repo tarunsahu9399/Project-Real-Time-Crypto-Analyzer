@@ -8,7 +8,7 @@ function Avg_Down() {
     let Coin_Class = document.querySelectorAll(".Coin_you_have");
 
     for (let i = 0; i < Invested_Price_Class.length; i++) {
-
+       
 
         let Invested_Price = parseFloat(Invested_Price_Class[i].value);
         console.log(Invested_Price);
