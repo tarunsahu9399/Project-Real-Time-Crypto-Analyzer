@@ -12,7 +12,7 @@ const UserData = require('./models/user');
 let islogin = require("./static/checklogin.js");
 
 
-console.log(islogin);
+//console.log(islogin);
 
 
 
